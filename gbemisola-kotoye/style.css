@@ -1,0 +1,339 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* custom scroll bar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+section {
+  padding: 100px 0;
+}
+/* Naigation styling */
+nav {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  z-index: 999;
+  transition: all 0.3s ease;
+}
+nav > div {
+  width: 20%;
+  padding-left: 50px;
+}
+nav > div > a {
+  color: crimson;
+  font-family: cursive;
+}
+nav > ul {
+  display: flex;
+  margin-left: 400px;
+  list-style-type: none;
+}
+nav > ul > li {
+  margin-top: -7px;
+  margin-left: 70px;
+}
+nav > ul > li > a {
+  display: block;
+  transition: color 0.3s ease;
+  text-decoration: none;
+  color: crimson;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: cursive;
+}
+nav > ul > li:hover {
+  color: crimson;
+  background-color: antiquewhite;
+  height: 30px;
+}
+nav.sticky {
+  padding: 15px 0;
+  background: crimson;
+}
+nav.sticky div.name a span {
+  color: #fff;
+}
+nav.sticky ul li a {
+  color: #fff;
+}
+nav.sticky ul li a:hover {
+  color: crimson;
+  background-color: antiquewhite;
+}
+/* Scroll up button */
+.scroll-up-btn {
+  position: fixed;
+  height: 45px;
+  width: 42px;
+  background: crimson;
+  right: 30px;
+  bottom: 10px;
+  text-align: center;
+  line-height: 45px;
+  color: #fff;
+  z-index: 9999;
+  font-size: 30px;
+  border-radius: 6px;
+  border-bottom-width: 2px;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.scroll-up-btn.show {
+  bottom: 30px;
+  opacity: 1;
+  pointer-events: auto;
+}
+.scroll-up-btn:hover {
+  filter: brightness(90%);
+}
+
+/* Logo name styling */
+div.name a {
+  color: aliceblue;
+  text-decoration: none;
+}
+div.name a span {
+  transition: all 0.3s ease;
+}
+
+/* Header styling */
+header.banner {
+  width: 100%;
+  height: 100vh;
+  background-image: url("/images/dark.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+header.banner > p {
+  color: aliceblue;
+  text-align: left;
+  font-size: 42px;
+  font-family: cursive;
+  font-weight: bold;
+  padding-top: 410px;
+  padding-left: 50px;
+}
+p > span,
+a span {
+  color: crimson;
+}
+section#about,
+section#contact,
+section#gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+#about h2,
+#contact h2,
+#gallery h2 {
+  color: crimson;
+  font-family: cursive;
+  font-size: 36px;
+  font-weight: 600;
+  position: relative;
+  margin-bottom: 60px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* About me section styling*/
+section#about > div.about-content,
+section#contact > div.contact-content,
+section#gallery > div.images {
+  display: flex;
+  align-items: end;
+}
+section#about > div.about-content > div.pic-container {
+  width: 30vw;
+  /* border: 2px solid #000; */
+  border-radius: 15px;
+  margin-top: 40px;
+  margin-left: 60px;
+}
+section#about > div.about-content > div.pic-container > img.pic {
+  width: 80%;
+  margin-left: 30px;
+}
+section#about > div.about-content > div.me-text {
+  width: 60vw;
+  align-self: center;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+section#about > div.about-content > div.me-text > p {
+  font-size: 26px;
+  font-weight: 300;
+  font-family: cursive;
+  text-align: justify;
+}
+
+/* Gallery section styling*/
+section#gallery {
+  margin: 30px 0 0 0;
+  background-color: black;
+}
+section#gallery div.images {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 30px;
+}
+section#gallery div.img {
+  width: 25vw;
+  border: 2px solid #000;
+  margin: 20px 30px;
+}
+section#gallery div img {
+  width: 100%;
+  height: 340px;
+  border-radius: 50px;
+}
+
+/* Contact me section styling*/
+div.contact-content {
+  flex-wrap: wrap;
+}
+div.contact-info,
+div.contact-form {
+  width: 40%;
+  margin-left: 60px;
+}
+div.contact-form .text {
+  margin-top: -285px;
+}
+div.text {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-family: cursive;
+}
+div.contact-info p {
+  font-size: 15px;
+  font-weight: 300;
+  font-family: cursive;
+  text-align: justify;
+}
+.icons {
+  margin: 20px 0;
+}
+.row {
+  margin-bottom: 20px;
+}
+.row .info {
+  margin-top: -30px;
+  margin-left: 30px;
+}
+.row i {
+  font-size: 25px;
+  color: crimson;
+}
+.info div {
+  font-family: cursive;
+}
+.info .head {
+  font-weight: 500;
+}
+.info .sub-title {
+  color: #333;
+}
+
+/* Contact form */
+form .fields {
+  display: flex;
+}
+form .field,
+form .fields .field {
+  height: 45px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+form .textarea {
+  height: 80px;
+  width: 100%;
+}
+form .name {
+  margin-right: 10px;
+}
+form .email {
+  margin-left: 10px;
+}
+form .field input,
+form .textarea textarea {
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 6px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+}
+form .field input:focus,
+form .textarea textarea:focus {
+  border-color: #b3b3b3;
+}
+form .textarea textarea {
+  padding-top: 10px;
+  resize: none;
+}
+form .button {
+  height: 47px;
+  width: 170px;
+}
+form .button button {
+  width: 100%;
+  height: 100%;
+  border: 2px solid crimson;
+  background: crimson;
+  color: #fff;
+  outline: none;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: cursive;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+form .button button:hover {
+  color: crimson;
+  background: none;
+}
+
+/* footer styling */
+footer {
+  background: #111;
+  padding: 15px 23px;
+  color: #fff;
+  font-family: cursive;
+  text-align: center;
+}
+footer span a {
+  color: crimson;
+  text-decoration: none;
+}
+footer span a:hover {
+  text-decoration: underline;
+}

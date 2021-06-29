@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gbemisola</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <script type="text/javascript">
+        validateForm = () => {
+            var name = document.forms['messageForm']['sender'];
+            if (name.value == "") {
+                alert("Please enter your name");
+                name.focus;
+                return false;
+            }
+            var email = document.forms[' messageForm']['email'];
+            if (email.value == "") {
+                alert("Please enter your email address");
+                email.focus;
+                return false;
+            }
+            var topic = document.forms[' messageForm']['subject'];
+            if (topic.value == "") {
+                alert("Please enter a subject");
+                topic.focus;
+                return false;
+            }
+            var note = document.forms[' messageForm']['message'];
+            if (note.value == "") {
+                alert("Please enter your message. I'm excited to meet you too");
+                note.focus;
+                return false;
+            }
+        }
+    </script>
+    <!-- scroll up button -->
+    <div class="scroll-up-btn">
+        <i class="las la-angle-up"></i>
+    </div>
+    <!-- Banner section starts -->
+    <header class="banner">
+        <!-- Navigation bar -->
+        <nav>
+            <div class="name">
+                <a href="index.html">About<span>Me.</span></a>
+            </div>
+            <ul>
+                <li class="nav-link"><a href="index.html">Home</a></li>
+                <li class="nav-link"><a href="#about">About Me</a></li>
+                <li class="nav-link"><a href="#gallery">Gallery</a></li>
+                <li class="nav-link"><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+        <!-- Some text -->
+        <p>Hi there, I'm <span>Gbemisola Kotoye</span> and I have few  things to say about me.</p>
+    </header>
+
+    <!-- About me section starts -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="pic-container">
+                <img src="/images/meee.png" alt="Avatar" class="pic">
+            </div>
+            <div class="me-text">
+                <!-- Some text-->
+                <p>I'm Gbemisola and I'm a <span class="typing-2">Software Engineer</span> and a Women Techsters Fellow 2021.</p>
+                <p>Professionally connected with the industry of web development.</p>
+                <p>Well-organized individual, problem solver, detail-oriented team player. A lively, motivated and creative person who has a strong understanding of the Agile framework.</p>
+                <p>Interested in the entire full stack spectrum and working with positive people on ambitious projects. </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery section starts -->
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="images">
+            <div class="img">
+                <img src="/images/IMG_20190622_202700_4.jpg" alt="Avatar" class="pic">
+            </div>
+            <div class="img">
+                <img src="/images/IMG_20190622_155140_2.jpg" alt="">
+            </div>
+            <div class="img">
+                <img src="/images/IMG_20190428_075901_0.jpg" alt="">
+            </div>
+            <div class="img">
+                <img src="/images/IMG_20190303_082557_9.jpg" alt="">
+            </div>
+            <div class="img">
+                <img src="/images/IMG_20190303_082409_2.jpg" alt="">
+            </div>
+            <div class="img">
+                <img src="/images/IMG_20190303_082127_0.jpg" alt="">
+            </div>
+        </div>
+    </section>   
+
+    <!-- Contact me section starts -->
+    <section id="contact">
+        <!-- A form goes here -->
+        <h2>Contact Me</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="text">Get in Touch</div>
+                <p>I developed this creative website with just HTML, CSS3, and Javascript. Hence, the template is light and loads relatively fast. 
+                    I'm open to the wonderful opportunities that the tech world has to offer and my goal is to be a Software Deelopment at Apple and Microsoft Inc. 
+                    I speak JavaScript, Python, React.js and C. Send a message and let's have a chat!</p>
+                <div class="icons">
+                        <div class="row">
+                            <i class="las la-user-circle"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Gbemisola Kotoye</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="las la-map-marker"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">Lagos, Nigeria</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="las la-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">gkotoye@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="contact-form">
+                <div class="text">Message me</div>
+                <form action="" method="POST" enctype="text/plain" attribute="netlify" name="messageForm" onsubmit="validateForm()">
+                    <div class="fields">
+                        <div class="field name">
+                            <input type="text" placeholder="Name" name="sender">
+                        </div>
+                        <div class="field email">
+                            <input type="email" placeholder="Email" name="email">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <input type="text" placeholder="Subject" name="subject">
+                    </div>
+                    <div class="field textarea">
+                        <textarea cols="30" rows="10" placeholder="Message.." name="message"></textarea>
+                    </div>
+                    <div class="button">
+                        <button type="submit">Send message</button>
+                    </div>
+                </form>
+            </div>  
+        </div>
+    </section>
+
+    <!-- The footer starts -->
+    <footer>
+        <span>Created By <a href="https://www.github.com/Barkty">Barkty</a> | <span class="far fa-copyright"></span> 2021 All rights reserved.</span>
+    </footer> 
+
+    <script src="script.js"></script>
+</body>
+</html>
