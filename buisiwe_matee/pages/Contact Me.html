@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<Html>
+    <head>
+        <title>Contact Me</title>
+        <style>
+            body {background-color: brown;}
+             </style>
+    </head>
+    <body>
+       <h1>Contact Me</h1>
+        <!--Table-->
+        <table>
+            <thead>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Contact Number</th>
+                
+            </thead>
+            <br>
+            <tbody>
+                <tr>
+                    <td>Busi</td>
+                    <td>Busi.matee@womantechsters.org</td>
+                    <td>27736383833</td>
+                    
+                </tr>
+                
+                
+        </table>
+                <br>
+                <caption>Or leave A Short Message below</caption>
+                <br>
+                <hr>
+
+                <!--Forms-->
+                <form action="process.php" method="POST">
+                    <div>
+                         <label>First Name</label>
+                         <input type="text" name="first-name">
+                    </div>
+                    <br>
+                    <div>
+                         <label>Last Name</label>
+                         <input type="text" name="Last-name">
+                    </div>
+                    <br>
+                    <div>
+                         <label>email</label>
+                         <input type="email" name="email">
+                    </div>
+                    <br>
+                    <div>
+                         <label>Message</label>
+                         <textarea name="message"></textarea>
+                    </div>
+                    <br>
+                    <div>
+                         <label>Gender</label>
+                         <select name="Gender">
+                             <option value="Male">Male</option>
+                             <option value="Female">Female</option>
+                             <option value="Other">Other</option>
+                         </select>
+                    </div>
+                    <br>
+                    <div>
+                        <label>Age</label>
+                        <input type="number" name="age" value="30">
+                    </div>
+                    <br>
+                    <div>
+                        <label>Birthday</label>
+                        <input type="date"  name="Birthday">
+                    </div>
+                    
+                    <!--Button-->
+                    <button>Click me</button>
+
+    </body>
+</Html>
