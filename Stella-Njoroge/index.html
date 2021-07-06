@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Project One</title>
+</head>
+<body>
+    
+    <!-- nav bar -->
+    <nav>
+        <div id="logo"><i class="fas fa-star"></i></div>
+        <div id="burger"><i class="fas fa-bars"></i></div>
+        <div id="nav-links">
+            <ul>
+                <li><a href="#home-section">Home</a></li>
+                <li><a href="#about-section">About Me</a></li>
+                <li><a href="#gallery-section">Gallery</a></li>
+                <li><a href="#contact-section">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- home section -->
+    <section id="home-section">
+        <div id="home-title">
+            <h3>Hi there!</h3>
+            <h1>I'm a <span>front-end developer</span> from Nairobi</h1>
+            <button>Contact Me</button>
+        </div>
+    </section>
+
+    <!-- about me section -->
+    <section id="about-section">
+        <div id="about-img">
+            <img src="./images/img1.jpg" alt="about image">
+        </div>
+        <div id="about-text">
+            <div id="about-title">
+                <div id="top-text">
+                    <h3>who am i</h3>
+                    <h2>HELLO</h2>
+                </div>
+                <div id="pattern"></div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil odit quasi atque fuga debitis voluptatem facilis tenetur, suscipit molestiae cumque temporibus consequatur sapiente. Libero, quaerat.</p>
+            <br />
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat dignissimos laborum saepe ea dolore, ullam vel quam repellat optio doloremque!</p>
+        </div>
+    </section>
+
+    <!-- gallery section -->
+    <section id="gallery-section">
+
+        <div class="heading">
+            <h2>My Gallery</h2>
+            <div class="outline"></div>
+        </div>
+
+        <div class="grid-container">
+            <div class="grid-img">
+                <img src="./images/img3.jpg" alt="image 1">
+            </div>
+            <div class="grid-img">
+                <img src="./images/img4.jpg" alt="image 2">
+            </div>
+            <div class="grid-img">
+                <img src="./images/img5.jpg" alt="image 3">
+            </div>
+            <div class="grid-img">
+                <img src="./images/img6.jpg" alt="image 4">
+            </div>
+            <div class="grid-img">
+                <img src="./images/img7.jpg" alt="image 5">
+            </div>
+            <div class="grid-img">
+                <img src="./images/img8.jpg" alt="image 6">
+            </div>
+            <div class="grid-img">
+                <img src="./images/img9.jpg" alt="image 7">
+            </div>
+            <div class="grid-img">
+                <img src="./images/img10.jpg" alt="image 8">
+            </div>
+            <div class="grid-img">
+                <img src="./images/img11.png" alt="image 9">
+            </div>
+        </div>
+    </section>
+
+    <!-- contact me section -->
+    <section id="contact-section">
+        <div class="heading">
+            <h2>Contact Me</h2>
+            <div class="outline"></div>
+        </div>
+
+        <form action="" id="contact-form">
+            <label for="name">Name: </label>
+            <input type="text" placeholder="Enter your name" id="name">
+
+            <label for="email">Email: </label>
+            <input type="email" placeholder="Enter your email" id="email">
+
+            <label for="message">Message: </label>
+            <textarea name="message" placeholder="Enter your message" id="message" cols="40" rows="10"></textarea>
+
+            <button type="submit" id="form-submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- footer section -->
+    <footer id="footer-section">
+        <p>Created by Stella | Copyright &copy; 2021</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
