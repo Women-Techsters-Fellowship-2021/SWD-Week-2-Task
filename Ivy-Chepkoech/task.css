@@ -1,0 +1,187 @@
+:root {
+  --my-grey-color: #e3e3e3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+body {
+  color: #474646;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Risque", cursive;
+  margin-top: 20px;
+}
+
+/*header/hero styling*/
+header {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(./569178.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center left;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.point {
+  font-size: 60px;
+}
+
+.mini-point {
+  font-size: 24px;
+}
+
+/*Nav-bar styling*/
+nav {
+  background-color: var(--my-grey-color);
+}
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  list-style-type: none;
+}
+
+li {
+  padding: 5px 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+  font-family: "Risque", cursive;
+}
+
+/*  bio styling*/
+
+#bio {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: pink;
+}
+
+#bio img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+
+  box-shadow: 0px 5px 25px -5px #999;
+  border: 10px solid white;
+}
+
+#bio p {
+  max-width: 700px;
+  width: 100%;
+  /* background-color: peachpuff; */
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Gallery section */
+
+#gallery {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: pink;
+}
+
+/*#gallery p {
+    margin-top: 10px;
+
+}*/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 320px);
+  align-items: stretch;
+  grid-gap: 10px;
+  margin-top: 10px;
+}
+
+.grid-container img {
+  width: 100%;
+}
+
+/*  Contact Me section */
+#contact-me {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: pink;
+}
+
+form {
+  display: grid;
+  max-width: 800px;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+
+  margin-top: 20px;
+}
+
+input {
+  padding: 15px 25px;
+  font-size: inherit;
+  font-family: inherit;
+  border: 2px solid var(--my-grey-color);
+  grid-column: span 2;
+}
+
+#contact-me p {
+  margin-top: 20px;
+}
+
+#date {
+  grid-column: span 2;
+}
+
+#submit-button {
+  grid-column: span 2;
+  align-self: center;
+  justify-self: center;
+
+  padding: 10px 25px;
+  font-size: inherit;
+  font-family: inherit;
+  border: 0;
+  background-color: var(--my-grey-color);
+}
+
+/*  Footer section */
+
+footer {
+  background-color: var(--my-grey-color);
+  text-align: center;
+  padding: 50px 20px;
+}
