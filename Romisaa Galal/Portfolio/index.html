@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Over the Rainbow">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <title>Romisaa Galal</title>
+</head>
+<body>
+    <!-- Start The Nav Bar -->
+    <nav>
+        <div class="lines">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Things I Love</a></li>
+            <li><a href="#contact-me">Contact Me!</a></li>
+        </ul>
+    </nav>
+    <!-- End The Nav Bar -->
+
+    <!-- Start Banner Section -->
+    <div class="container">
+        <h1 data-text="Romisaa Galal">Romisaa Galal</h1>
+        <p>A Plant-Lover Who Loves To Code</p>
+    </div>
+    <!-- End Banner Section -->
+
+    <!-- Start About Section -->
+    <section class="skewedBox">
+        <div class="photo">
+            <img src="photo.jpg" alt="...">    
+        </div>
+        <div id="about">
+            <h2>Hello!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nesciunt eius, 
+                ipsum nihil porro officiis doloribus reiciendis, atque voluptates repellat fuga provident non natus beatae optio culpa soluta! Repudiandae, vero?</p>
+        </div>
+
+    </section>
+    <!-- End About Section -->
+
+    <!-- Start Gallery Section -->
+    <div id="gallery">
+        <div class="MyBox">
+            <div class="imgbox">
+                <img src="pic(3).jpg" alt="...">
+            </div>
+            <div class="content">
+                <h4>This is my slogan for life.</h4>
+            </div>
+        </div>
+
+        <div class="MyBox">
+            <div class="imgbox">
+                <img src="pic(3).jpg" alt="...">
+            </div>
+            <div class="content">
+                <h4>This is my slogan for life.</h4>
+            </div>
+        </div>
+
+        <div class="MyBox">
+            <div class="imgbox">
+                <img src="pic(3).jpg" alt="...">
+            </div>
+            <div class="content">
+                <h4>This is my slogan for life.</h4>
+            </div>
+        </div>
+
+        <div class="MyBox">
+            <div class="imgbox">
+                <img src="pic(3).jpg" alt="...">
+            </div>
+            <div class="content">
+                <h4>This is my slogan for life.</h4>
+            </div>
+        </div>
+
+        <div class="MyBox">
+            <div class="imgbox">
+                <img src="pic(3).jpg" alt="...">
+            </div>
+            <div class="content">
+                <h4>This is my slogan for life.</h4>
+            </div>
+        </div>
+
+        <div class="MyBox">
+            <div class="imgbox">
+                <img src="pic(3).jpg" alt="...">
+            </div>
+            <div class="content">
+                <h4>This is my slogan for life.</h4>
+            </div>
+        </div>
+
+    </div>
+    <!-- End Gallery Section -->
+
+    <!-- Start Contact-me Section -->
+    <section class="skewedBox-contact">
+    <div id="contact-me">
+        <h3>Hello! Feel Free To Contact Me!</h3>
+        <form action="#" name="contact_form">
+            <label for="first_name">Your First Name</label>
+            <input name="first_name" type="text" required placeholder="Please, Enter Your First Name"/>
+            <br>
+            <label for="last_name">Your Last Name</label>
+            <input name="last_name" type="text" required placeholder="Please, Enter Your Last Name"/>
+            <br>
+            <label for="email">Your Mail</label>
+            <input name="email" type="email" required placeholder="Please, Enter Your E-mail"/>
+            <br>
+            <label for="message">Your Message</label>
+            <textarea name="message" cols="30" rows="10" required placeholder="Pleasem Enter Your Message Here."></textarea>
+            <div class="center">
+                <input type="submit" value="Submit">
+            </div>
+
+        </form>
+    </div>
+    </section>
+    <!--End Contact-me Section  -->
+
+    <!-- Start Footer Section -->
+    <div class="footer">
+        <div class="icons">
+            <a href="https://www.facebook.com/beginning.anewdance"><img src="https://img.icons8.com/material-outlined/24/000000/facebook-new.png"/></a>
+            <a href="https://icons8.com/icon/118487/facebook"></a>
+            <a href="www.gmail.com"><img src="https://img.icons8.com/material-outlined/24/000000/gmail-new.png"/></a>    
+            <a href="https://icons8.com/icon/ZE7CF2CQ0DcJ/gmail"></a>
+            <a href="https://github.com/Romisaa"><img src="https://img.icons8.com/material-outlined/25/000000/github.png" class="github"/></a>
+            <a href="https://icons8.com/icon/106564/github"></a>
+        </div>
+        <h4>&copy;Romisaa Galal. All Right Reserved 2021.</h4>
+    </div>
+    <!-- End Footer section -->
+
+
+
+    <script>
+        const lines = document.querySelector('.lines');
+        const navLinks = document.querySelector('.nav-links');
+        const links = document.querySelectorAll('.nav-links li');
+
+        lines.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+            links.forEach(link => {
+                link.classList.toggle('fade');
+            });
+        });
+
+        
+
+    </script>
+</body>
+</html>
